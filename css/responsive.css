@@ -1,0 +1,274 @@
+/*768 is the max viewport with compared to all 6In screen devices*/
+
+@media only screen and (max-width: 768px) {
+    .content4 {
+        background-image: none;
+        display: grid !important;
+        height: unset;
+        text-align: center;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 16px;
+    }
+    .content4>* {
+        margin-bottom: 16px;
+    }
+    .content4>div {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width: 100%;
+    }
+    .content4>div>img {
+        max-width: 38%;
+    }
+    .content4>img {
+        display: flex;
+        /* margin-left: auto;
+        margin-right: auto; */
+        grid-row-start: 2;
+        margin: auto;
+    }
+    .content5,
+    .content6,
+    .content7,
+    .content8 {
+        height: unset;
+    }
+    .content5 {
+        padding-left: 15px !important;
+        padding-right: 15px;
+    }
+    .content6 {
+        justify-content: flex-start !important;
+        background: #a1acae !important;
+    }
+    .content6>div,
+    .content7>div {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .content7 {
+        background: #0080bf !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        text-align: left !important;
+    }
+    .content7>div {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .content7>div button {
+        margin: 16px 0 24px 0;
+        background: #d50000;
+    }
+    .content7>div+div {
+        display: none;
+    }
+    .content10 .formSection {
+        flex-wrap: wrap;
+        margin-bottom: 0 !important;
+    }
+    .content10 .formSection input {
+        width: 100% !important;
+    }
+    .content10 .formSection input:not(:last-child) {
+        margin-bottom: 24px;
+    }
+    .content8 {
+        background: #dd7d00;
+    }
+    .content8>div,
+    .content9>div {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .content8>div button {
+        margin: 16px 0 3px 0;
+    }
+    .content8>div+div {
+        display: none;
+    }
+    .content9 {
+        background: #f55c82;
+        text-align: left !important;
+        justify-content: flex-start !important;
+    }
+    .content9>div+div {
+        margin-top: 16px !important;
+    }
+    .content9>div+div h2 {
+        margin: 0 0 16px 0 !important;
+    }
+    .footer {
+        justify-content: flex-start !important;
+        flex-wrap: wrap;
+    }
+    .preHeader {
+        flex-direction: row !important;
+    }
+    .mainBanner .carousel-item>img {
+        width: unset;
+        height: 100%;
+    }
+    .respSideBar {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        background: red;
+        height: 100% !important;
+        overflow: auto;
+    }
+    .respSideBar ul {
+        padding-bottom: 20px;
+    }
+    /**** need to clean up code  */
+    .mtTop {
+        margin-top: 10px;
+    }
+    .content2 div {
+        border-right: 0 !important;
+    }
+    .border_top_sm {
+        border-top: 1px solid #dee2e6 !important;
+    }
+    .mb-xs-2 {
+        margin-bottom: 16px;
+    }
+    .block-mtb {
+        height: 48px !important;
+        padding: 10px 20px;
+    }
+    .aside {
+        padding: 15px 0;
+    }
+    .block4 img {
+        width: 28px;
+        height: 28px;
+    }
+    .main_header_xs {
+        padding: 13px 0px 13px 19px;
+    }
+    ul {
+        padding-left: 10px;
+    }
+    .navbar-nav {
+        margin: 0;
+    }
+    .card {
+        max-width: 100% !important;
+        flex: 0 0 100%;
+    }
+    .offer_card img {
+        width: unset !important;
+    }
+    body.noScroll {
+        overflow: hidden;
+    }
+    .custom_num {
+        font-size: 15px;
+        margin-bottom: 3px;
+    }
+    .mainBanner .carousel-item.contentRight div>div,.offer_card.item.contentRight div>div {
+        margin-left: 10%;
+        margin-right: 0;
+        width: 80% !important;
+        right: unset;
+    }
+    .mainBanner .carousel-item{
+        background: #6ac7db !important;
+    }
+    .mainBanner .carousel-item img, .offer_card img{
+        visibility: hidden;
+    }
+    .mainBanner .carousel-item h3,.mainBanner .carousel-item h6,.offer_card h3,.offer_card h6{
+        text-shadow: 1px 1px 3px #5e5e5e;
+    }
+    .offer_card {
+        background: #6ac7db !important;
+        max-height: 400px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .content4 {
+        grid-template-columns: 1fr;
+    }
+    .content4>div {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        width: 100%;
+    }
+    .content4>img {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        grid-row-start: unset;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    .card {
+        max-width: 32.3333% !important;
+    }
+    .content2 div:nth-child(6),
+    .content2 div:last-child {
+        border-right: 0;
+    }
+}
+
+
+/**********Amreen code**********/
+
+.max-width-100 {
+    max-width: 100% !important;
+}
+
+.login-form-wrapper {
+    background: #ebfefd;
+}
+
+.flex-grow-2 {
+    flex: 2 100%;
+    max-width: 100% !important;
+}
+
+
+/*General Phone Resolution*/
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .login .sidebar {
+        min-width: 100%;
+    }
+    .login-form-wrapper {
+        background: url(../assets/images/login-left-img.png);
+    }
+    .login .content-main {
+        background: rgb(235 255 253 / 80%);
+    }
+    .login-form-wrapper .sidebar .w-100.bg-Darkblue.position-absolute.left-banner-text-primary {
+        position: relative !important;
+        bottom: 0;
+        max-width: 100%;
+        padding: 28px;
+    }
+    .login-form-wrapper .sidebar img {
+        display: none;
+    }
+    .w-sm-100,
+    .w-50.w-sm-100 {
+        width: 100% !important;
+    }
+    .order-mob-last {
+        order: 1;
+    }
+    .mob-bg-blue-dark {
+        background: #0067b1 ;
+    }
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 768px) {
+    .login .sidebar {
+        min-width: 50%;
+    }
+}
