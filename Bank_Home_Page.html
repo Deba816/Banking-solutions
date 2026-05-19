@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Banking Application</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!--<script src="js/bootstrap.min.js"></script>
+    Following three files are required for CAROUSEL -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap_3.4.1.min.js"></script>
+    <!-- <script src="js/realtimecontainerscript_credit_card.js"></script>
+    <script src="js/api_integration_credit_card_home_page.js"></script> -->
+    <!-- <script src="js/CelebrusInsert.js"></script> -->
+    <style>
+        .btn-round-custom {
+            box-shadow: none !important;
+            border: none !important;
+            padding: 10px 20px !important;
+            background: #0067b1;
+            font-weight: normal !important;
+            border-radius: 10px !important;
+            border: 1px solid transparent !important;
+            line-height: 1.428571;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container-fluid m-0 p-0 wrapper">
+        <div class="col-sm-12 p-0">
+            <nav class="navbar navbar-expand-sm p-0 justify-content-center bg-Darkblue font-Roboto-Bold ">
+                <ul class="navbar-nav navigation p-1 preHeader">
+                    <li class="nav-item px-4">
+                        <a class="nav-link text-white" href="#">Personal</a>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a class="nav-link text-white" href="#">Business</a>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a class="nav-link text-white" href="#">Corporate</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!--Header Section Starts here-->
+            <header class="d-flex p-2">
+                <!-- <img class="pl-4 mr-4" src="assets/images/logo_default.png" alt="header-logo" width="10%"/> -->
+                <!-- <div class="col-8 d-flex flex-row-reverse ml-5"> 
+                    <nav class="navbar navbar-expand p-0 justify-content-center font-Roboto">
+                    <ul class="navbar-nav navigation p-1 font-weight-bold">
+                        <li class="nav-item px-4">
+                            <a class="nav-link loans Darkblue-font" href="Home_Loan_Offers_Page.html">Offers</a>                   
+                          </li>
+                          <li class="nav-item px-4">
+                            <a class="nav-link loans Darkblue-font" href="#">Credit cards<img class="down_arrow ml-2" src="assets/images/down-arrow.png"/></a>
+                          </li>
+                          <li class="nav-item px-4">
+                           <a class="nav-link loans Darkblue-font" href="#">Invest<img class="down_arrow ml-2" src="assets/images/down-arrow.png"/></a>
+                         </li>  
+                         <li class="nav-item px-4">
+                            <a class="nav-link loans Darkblue-font" href="#">Demat Account<img class="down_arrow ml-2" src="assets/images/down-arrow.png"/></a>
+                          </li> 
+                          <li class="nav-item px-4">
+                            <a class="nav-link loans Darkblue-font" href="#">Support</a>
+                          </li>                  
+                    </ul>  
+                    </nav>
+                </div> -->
+                <nav class="navbar navbar-expand-lg navbar-light p-0 justify-content-center mr-2" style="flex-grow: 1;">
+                    <a class="navbar-brand mr-auto" href="#"><img class="pl-4 mr-4" src="assets/images/header-logo.png"
+                            alt="header-logo" style="width: 110px; " /></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav navigation p-1 font-weight-bold">
+                            <li class="nav-item px-4">
+                                <a class="nav-link loans Darkblue-font" href="Home_Loan_Offers_Page.html">Finance</a>
+                            </li>
+                            <li class="nav-item px-4">
+                                <a class="nav-link loans Darkblue-font" href="offer_creditcard_dynamic.html">Credit cards<img
+                                        class="down_arrow ml-2" src="assets/images/down-arrow.png" /></a>
+                            </li>
+                            <li class="nav-item px-4">
+                                <a class="nav-link loans Darkblue-font" href="#">Invest<img class="down_arrow ml-2"
+                                        src="assets/images/down-arrow.png" /></a>
+                            </li>
+                            <li class="nav-item px-4">
+                                <a class="nav-link loans Darkblue-font" href="#">Demat Account<img
+                                        class="down_arrow ml-2" src="assets/images/down-arrow.png" /></a>
+                            </li>
+                            <li class="nav-item px-4">
+                                <a class="nav-link loans Darkblue-font" href="#">Support</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </nav>
+
+                <a href="Saving_offer_Login_Page.html"
+                    class="bg-OrangeFirst border-0 border-rounded font-Raleway-SemiBold d-flex align-self-center font-weight-bold px-5 py-2 white-font">
+                    Login
+                </a>
+
+            </header>
+            <!--Header Section Ends here-->
+
+            <!--Open Account Section Starts here-->
+
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner mainBanner bg-Darkblue">
+                    <img src="assets/images/mainBanner2.png" alt="home-banner-img" />
+                    <!-- <div class="carousel-item active">
+                        <div class="slideInner">
+                            <div class="col-5 align-self-center pl-4 pr-0">
+                                <h1 class="text-white">Fuel up! </h1>
+                                <h2 class="font-Oswald-Light white-font">it's on us. </h2>
+                                <p class="white-font">Enjoy 30% cashback* with RHB Shell Visa Credit Card</p>
+                                <button
+                                    class="Darkblue-font bg-lightskyblue border-0 border-rounded font-Raleway-SemiBold mt-3 button_style4">
+                                    Apply Now
+                                </button>
+                            </div>
+                            <img src="assets/images/mainBanner2.png" alt="home-banner-img" />
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="slideInner">
+                            <div class="col-5 align-self-center pl-4 pr-0">
+                                <h1 class="text-white">Slide 2</h1>
+                                <h2 class="font-Oswald-Light white-font">it's on us. </h2>
+                                <p class="white-font">Enjoy 30% cashback* with RHB Shell Visa Credit Card</p>
+                                <button
+                                    class="Darkblue-font bg-lightskyblue border-0 border-rounded font-Raleway-SemiBold mt-3 button_style4">
+                                    Apply Now
+                                </button>
+                            </div>
+                            <img src="assets/images/mainBanner2.png" alt="home-banner-img" />
+                        </div>
+                    </div> -->
+                </div>
+                <!-- <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a> -->
+            </div>
+            <!-- <div id="myCarousel" class="carousel  bg-Darkblue" data-ride="carousel">
+                <div class="carousel-inner ">
+                    <div class="item active home_loan_approval">
+                        <div class=" d-flex position-relative">
+                            <div class="slide-content  col-5 align-self-center pl-4 pr-0 slide1">
+                              <h1 class="text-white">One Account all you need </h1>
+                              <h2 class="font-Oswald-Light white-font">to get the endless possiblities </h2>
+                              <p class="white-font">Open a new account online and you’ll be using your card in minutes</p>
+                              <button class="Darkblue-font bg-lightskyblue border-0 border-rounded font-Raleway-SemiBold mt-3 button_style4">
+                                  Open an Account
+                              </button>
+                            </div>
+                            <div class="col-7 slide-img"><img class="w-100" src="assets/images/home-banner-img.png" alt="home-banner-img"/></div>
+                        </div>
+                    </div>
+                    <div class="item home_loan_approval">
+                        <div class=" d-flex position-relative"  style="height: 380px;">
+                            <div class="slide-content  col-5 align-self-center pl-4 pr-0 slide1 position-relative" style=" z-index: 1;">
+                              <h1 class="text-white">Fuel up! </h1>
+                              <h2 class="font-Oswald-Light white-font">it's on us. </h2>
+                              <p class="white-font">Enjoy 30% cashback* with RHB Shell Visa Credit Card/-i.</p>
+                              <button class="Darkblue-font bg-lightskyblue border-0 border-rounded font-Raleway-SemiBold mt-3 button_style4">
+                                  Apply Now
+                              </button>
+                            </div>
+                            <div class="col-12 slide-img"  style="position: absolute; left: 0;"><img  class="w-100"  style="max-height: 381px; position: absolute; left: 0;" src="assets/images/visaCardFull.png"  alt="Visa Card"/></div>
+                        </div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <img src="assets/images/right-arrow-angle.png"
+                        class="glyphicon glyphicon-chevron-left left-arrow-angle">
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <img src="assets/images/right-arrow-angle.png"
+                        class="glyphicon glyphicon-chevron-right right-arrow-angle">
+                    <span class="sr-only">Next</span>
+                </a>
+             </div>   -->
+            <!-- <div class="bg-Darkblue d-flex content1">
+               <div class="col-5 align-self-center pl-4 pr-0">
+                      <h1 class="text-white">One Account all you need </h1>
+                      <h2 class="font-Oswald-Light white-font">to get the endless possiblities </h2>
+                      <p class="white-font">Open a new account online and you’ll be using your card in minutes</p>
+                      <button class="Darkblue-font bg-lightskyblue border-0 border-rounded font-Raleway-SemiBold mt-3 button_style4">
+                          Open an Account
+                      </button>
+               </div>
+               <div class="col-7"><img class="w-100" src="assets/images/home-banner-img.png" alt="home-banner-img"/></div>
+            </div> -->
+            <!--Open Account Section Ends here-->
+
+            <div class="d-flex bg-Skyblue p-0 text-center content2 flex-wrap">
+                <div class="col-sm-4 col-md-2 px-0 align-self-center py-4">
+                    <img src="assets/images/online-shop-icon.png" alt="online-shop-icon" />
+                    <p class="font-Raleway-SemiBold m-0 Darkblue-font m-0 pt-1">Online Services</p>
+                    <p class="font-Roboto m-0">Explore our online features</p>
+                </div>
+                <div class="col-sm-4 col-md-2 px-0 align-self-center py-4">
+                    <img class="pb-2" src="assets/images/score-icon.png" alt="online-shop-icon" />
+                    <p class="font-Raleway-SemiBold m-0 Darkblue-font pt-2">Check Your Credit Score</p>
+                    <p class="font-Roboto m-0">You can check your score free with us</p>
+                </div>
+                <div class="col-sm-4 col-md-2 px-0 py-4">
+                    <img src="assets/images/loan-icon.png" alt="online-shop-icon" />
+                    <p class="font-Raleway-SemiBold m-0 Darkblue-font pt-1">Apply Loan</p>
+                    <p class="font-Roboto m-0">You can check your score free with us</p>
+                </div>
+                <div class="col-sm-4 col-md-2 p-0 py-4">
+                    <img class="pb-2" src="assets/images/credit-card-grey-icon.png" alt="online-shop-icon" />
+                    <p class="font-Raleway-SemiBold m-0 Darkblue-font pt-1">Apply Credit Card</p>
+                    <p class="font-Roboto m-0">You can check your score free with us</p>
+                </div>
+                <div class="col-sm-4 col-md-2 px-0 py-4">
+                    <img src="assets/images/save-money-icon.png" alt="online-shop-icon" />
+                    <p class="font-Raleway-SemiBold m-0 Darkblue-font pt-1">Invest to Grow</p>
+                    <p class="font-Roboto m-0">You can check your score free with us</p>
+                </div>
+                <div class="col-sm-4 col-md-2 px-0 py-4 border-0">
+                    <img src="assets/images/rewards-grey-icon.png" alt="online-shop-icon" />
+                    <p class="font-Raleway-SemiBold m-0 Darkblue-font pt-2">Explore Rewards</p>
+                    <p class="font-Roboto m-0">You can check your score free with us</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="bg-lightskyblue justify-content-around m-0 p-0 pt-4 pb-5 row text-center w-100 content3">
+            <div class="col-12">
+                <h1 class="Darkblue-font font-big mt-4">We Care About Your Account Security</h1>
+                <p class="text-darkblack font-Raleway-Medium text2">we ensure you have the most advanced technology &
+                    protection</p>
+            </div>
+            <div
+                class="col-xs-12 col-md-5 mb-2 ml-2 mr-2 p-2 green-font font-Montserrat_medium font-normal align-self-center">
+                <img class="mr-4" src="assets/images/secure-icon.png" />2 Factor i-safe authentication</div>
+            <div
+                class="col-xs-12 col-md-5 mb-2 ml-2 mr-2 p-2 orange-font align-self-center font-Montserrat_medium font-normal">
+                <img class="mr-4" src="assets/images/encryption-icon.png" />End-to-end 256 bit Encryption</div>
+        </div>
+
+
+        <!-- <a href="offer-page.html" target="_blank" title="Click to view details" id="MobileBanking"
+            class="ajax_call_hover ajax_call_click">
+            <div class="w-100 ">
+                <div class="col-12 content4 d-flex">
+                    <img class="align-self-center" src="assets/images/mobile-banking-banner-img22.png"
+                        alt="banking-banner2">
+                    <div class="align-self-center pl-0 mr-3 ml-auto">
+                        <h1 class="Darkblue-font font-big">Mobile Banking Made Easy</h1>
+                        <p class="text-darkblack font-Raleway_Light text1">Get things done on the fly<br>
+                            Its Simple as you see</p>
+                        <p class="text-darkblack font-Raleway-SemiBold text2">Download the app at:</p>
+                        <img class="mr-1" src="assets/images/google-play.png" alt="google-play">
+                        <img src="assets/images/app-store.png" alt="app-store">
+                    </div>
+                    <img class="align-self-center" src="assets/images/mobile-banking-banner-img3.png"
+                        alt="mobile-banner3">
+                </div>
+            </div>
+        </a> -->
+
+
+        <!-- <a href="http://13.71.100.229:8060/BankingSiteFinal/Offer-CreditCard.html" target="_blank"
+            title="Click to view details" id="MasterCreditCard" class="ajax_call_hover ajax_call_click">
+            <div class="row w-100 m-0">
+                <div class="col-12 content5 py-4 pl-5 text-white">
+                    <div class="col-md-6">
+                        <h1 class="font-big mt-3 pt-1 text-white">Discovering a world of experiences that makes every
+                            moment special.</h1>
+                        <h2 class="pt-3 font-Raleway-SemiBold text-white">World Master Credit Card</h2>
+                        <p class="font-Raleway-Medium font-normal mt-1 text-white">Indulge, with Mastercard's privileged
+                            offerings</p>
+                        <p class="font-Roboto-Regular mt-3 text-white">We are unlocking for you a world of travel,
+                            lifestyle, and insurance benefits giving you the flexibility to explore the<br> places and
+                            pursuits that matter most to you. Enjoy exclusive access and peace of mind whether you are
+                            on a<br> business trip or vacation!!</p>
+                        <button
+                            class="bg-OrangeFirst border-0 border-rounded font-Raleway-SemiBold button_style4 text-white">
+                            Know more
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="http://13.71.100.229:8060/BankingSiteFinal/Offer-HomeLoan.html" target="_blank"
+            title="Click to view details" id="HomeLoan" class="ajax_call_hover ajax_call_click">
+            <div class="row w-100 content6 m-0 justify-content-end py-5">
+                <div class="col-5 text-white mr-5">
+                    <h1 class="font-big text-white">Home Loan now made easy</h1>
+                    <h3 class="font-medium mt-3 font-Raleway-SemiBold text-white">Buy, build, renovate or redecorate
+                        your home with our<br> Home Loan! Interest rate @ 7.50%* p.a. onwards!</h3>
+                    <p class="font-Roboto-Regular mt-3 text-white">We are unlocking for you a world of travel,
+                        lifestyle, and insurance benefits giving you the flexibility to explore the places and pursuits
+                        that matter most to you. Enjoy exclusive access and peace of mind whether you are on a business
+                        trip or vacation!!</p>
+                    <button
+                        class="bg-white border-0 border-rounded font-Raleway-SemiBold button_style4 orangesecondary-font mt-3">
+                        Know more
+                    </button>
+                </div>
+            </div>
+        </a>
+
+        <a href="offer-page.html" target="_blank" title="Click to view details" id="CarLoan"
+            class="ajax_call_hover ajax_call_click">
+            <div class="row w-100 m-0 content7 text-white justify-content-end pr-5 pt-5 text-center">
+                <div class="col-6 mr-5 p-0">
+                    <h1 class="font-big text-white">Owing your Dream Car in now easy</h1>
+                    <h2 class="font-medium mt-4 font-Raleway-SemiBold text-white">Get your Dream Car at an affordable
+                        rate of<br> interest, Tenure upto 7 years!!</h2>
+                    <button
+                        class="bg-darkblue1 border-0 border-rounded font-Raleway-SemiBold button_style4 text-white button_style">
+                        Know more
+                    </button>
+                </div>
+                <div class="col-2 mr-4">
+                    <p class="font-normal font-Raleway-SemiBold mb-5 mt-5 pt-2 text-white">New Car Loan</p>
+                    <p class="black-font pt-4">
+                        Processing Fee<br>
+                        <span class="font-Oswald-Medium">0.40% Max RM. 10,000</span><br>
+                        Loan Tenure<br>
+                        <span class="font-Oswald-Medium">Upto 7 years</span><br>
+                        Interest rate lowest <br>
+                        <span class="font-Oswald-Medium">12.8%</span><br>
+                        Lowest EMI<br>
+                        <span class="font-Oswald-Medium">RM 1,622 per lakh</span>
+                    </p>
+                </div>
+            </div>
+        </a>
+
+
+
+        <a href="offer-page.html" target="_blank" title="Click to view details" id="PersonalLoan"
+            class="ajax_call_hover ajax_call_click">
+            <div class="row w-100 content8 m-0 justify-content-between text-white">
+                <div class="col-5 p-0">
+                    <h1 class="font-big">Now all is possible with<br>
+                        Bank personal loan</h1>
+                    <h3 class="font-normal font-Montserrat_medium mt-4">Get a loan easily from home at<br> attractive
+                        interest rates wihout any<br> Documentation at min 10.25%</h3>
+                    <button
+                        class="bg-white border-0 border-rounded font-Raleway-SemiBold lightyellow-font button_style2 mt-3">
+                        Know more
+                    </button>
+                </div>
+                <div class="col-4 p-0 align-self-center mr-4">
+                    <ul class="font-montserrat">
+                        <li>Affordable and Flexible <br>
+                            Interest Rates.</li>
+                        <li>Fast loan approval.</li>
+                        <li>Easy documentation <br>
+                            process wit 100% transparency.</li>
+                        <li>Maximum loan up to 50 Lakhs.</li>
+                        <li>Flexible repayment options, </li>
+                        <li>Ranging from 12 to 60 months.</li>
+                        <li>Zero hidden charge</li>
+                    </ul>
+
+                </div>
+            </div>
+        </a>
+
+        <a href="offer-page.html" target="_blank" title="Click to view details" id="Deposits"
+            class="ajax_call_hover ajax_call_click">
+            <div class="row m-0 w-100 content9 text-center text-white py-5 justify-content-end">
+                <div class="col-12">
+                    <h1 class="font-big">Deposits that help you progress</h1>
+                </div>
+                <div class="col-5 mr-5 mt-5">
+                    <h2 class="font-Raleway-SemiBold secure_your_family">Secure your and yours family's <br> future with
+                        the attractive <br>
+                        rate of interest
+                    </h2>
+                    <p class="font-Roboto-Regular text3 p-0">Get the best out of your wealth with Bank's special offers
+                        on Fixed and <br>
+                        Recurring Deposits that come with competitive rates of interest.
+                    </p>
+                    <button
+                        class="bg-Skyblue2 text-white border-0 border-rounded font-Raleway-SemiBold px-5 py-2 button_style4 mt-3 mb-2">
+                        Know more
+                    </button>
+                </div>
+            </div>
+        </a> -->
+
+        <!--Hover and Click Script Starts here-->
+
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/jQuery.verticalCarousel.js"></script>
+        <script type="text/javascript" src="js/jquery.hoverIntent.min.js"></script>
+        <script>
+            $(window).load(function () {
+                // $('#myModal').modal('show');
+            });
+            $(document).ready(function (e) {
+                $('.nav_left_pane #main_links > .list_item >a').on('click', function () {
+                    //$('.sub_list_group').hide();
+                    $(this).toggleClass('active');
+                    $(this).parent().find('.sub_list_group').toggle(300)
+                });
+
+
+                /* For future use - Trigger events on mouse hover, no time restriction
+                /*	$(".ajax_call").hover(function(e) {
+                        var id =$(this).attr('id');
+                        var data_Object = {
+                                "CustomerID": "7777777790",
+                                "Channel":"Web",
+                                "BannerType" : id
+                                }
+                    	
+                        $.ajax({
+                                type: "POST",
+                                url: "http://104.211.220.29:8060/prweb/PRRestService/MarketingForBanking/V1/Digital",
+                                data: JSON.stringify(data_Object),
+                                dataType: "json",	
+                                //beforeSend: function (xhr) {
+                                //	xhr.setRequestHeader ("Authorization", "Basic " + ("mridul" + ":" + "rules"));
+                                //},		
+                                //username: "mridul",
+                                //password: "rules",			
+                                //headers: {
+                                //	"Authorization": "Basic " + btoa('mridul' + ':' + 'rules')
+                                //},  
+                                success: function(response){
+                                },
+                                error: function(response) {
+                                }
+                        });
+                    	
+                    }); */
+
+
+                /* Function to Trigger event on mouse hover for specified time interval; uses jquery.hoverIntent.min JS file */
+
+                $(".ajax_call_hover").hoverIntent({
+                    sensitivity: 1, // number = sensitivity threshold (must be 1 or higher)    
+                    interval: 1000, // number = milliseconds for onMouseOver polling interval    
+                    timeout: 10,    // number = milliseconds delay before onMouseOut    
+                    over: function () {
+                        //alert('triggering event');
+
+                        var id = $(this).attr('id');
+                        var data_Object = {
+                            "CustomerID": "7777777773",
+                            "Channel": "Web",
+                            "EventType": "Digital Banner - Hovered",
+                            "BannerType": id
+                        }
+
+                        $.ajax({
+                            type: "POST",
+                            url: "http://13.71.100.229:8060/prweb/PRRestService/MarketingForBanking/V1/Digital",
+                            data: JSON.stringify(data_Object),
+                            dataType: "json",
+
+                            success: function (response) {
+
+                            },
+                            error: function (response) {
+                            }
+                        });
+
+
+                    },
+                    out: function () {
+
+                    }
+                });
+
+
+                /* Function to Trigger Event on Mouse Click */
+
+                $(".ajax_call_click").click(function (e) {
+                    var id = $(this).attr('id');
+                    var data_Object = {
+                        "CustomerID": "7777777773",
+                        "Channel": "Web",
+                        "EventType": "Digital Banner - Clicked",
+                        "BannerType": id
+                    }
+
+                    $.ajax({
+                        type: "POST",
+                        url: "http://13.71.100.229:8060/prweb/PRRestService/MarketingForBanking/V1/Digital",
+                        data: JSON.stringify(data_Object),
+                        dataType: "json",
+
+                        success: function (response) {
+
+                        },
+                        error: function (response) {
+                        }
+                    });
+
+                });
+
+                /* End of Functions*/
+
+            });
+
+
+        </script>
+
+        <!--Hover and Click Script Ends here-->
+
+        <div class="row text-center m-0 w-100 py-5 px-4 content10 text-white">
+            <h1 class="font-big mx-auto">Feedback and Complaints</h1>
+            <p class="font-Roboto-Regular mx-auto mb-4 text2 mt-2">Please feel free to give your feedback whether it's a
+                compliment, suggestion or a complain will get back or action accordingly</p>
+
+            <div class="col-12 d-flex justify-content-between p-0 mt-3 mb-3 formSection">
+                <input type="text" class="form-control  border_radius10" placeholder="Your Name">
+                <input type="text" class="form-control border_radius10" placeholder="Email">
+                <input type="text" class="form-control border_radius10" placeholder="Phone Number" name="pswd">
+            </div>
+            <div class="col-12 border_radius10 mt-4 p-0 textarea1">
+                <textarea class="form-control border-0" id="exampleFormControlTextarea2"
+                    placeholder="Query - Feeback - Complain" rows="4"></textarea>
+            </div>
+            <button
+                class="bg-lightskyblue border-0 border-rounded font-Raleway-SemiBold px-5 py-2 Darkblue-font mt-5 mb-2 mx-auto button_style3 font-weight-bold">
+                Submit
+            </button>
+        </div>
+
+        <div class="footer d-flex justify-content-between px-3 pb-3 pt-4">
+            <p class="m-0 align-self-center font-Roboto-Regular text-darkblack"
+                style="font-size: 14px; letter-spacing: -0.14px">© 2020 Copyrights International Bank <span
+                    class="px-3"> |</span> Privacy Policy <span class="px-3"> |</span> Cookie Policy <span class="px-3">
+                    |</span> Terms of Use <span class="px-3"> |</span> Sitemap</p>
+            <img src="assets/images/social-icons.png" alt="social-icons" />
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+</html>
