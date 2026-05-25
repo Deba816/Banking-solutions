@@ -193,13 +193,13 @@
     </script>
 
     <!-- Loading script asynchronously -->
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
             (function (a, b, c, d) {
                 a = 'https://tags.tiqcdn.com/utag/credera/commerce-demo/prod/utag.js';
                 b = document; c = 'script'; d = b.createElement(c); d.src = a; d.type = 'text/java' + c; d.async = true;
                 a = b.getElementsByTagName(c)[0]; a.parentNode.insertBefore(d, a);
             })();
-    </script>
+    </script> -->
 
 
     <!-- Top Navigation -->
@@ -743,16 +743,16 @@
         //On click of learn more of Instant Cashback Card
         function setDynamicOffer() {
             clickCountFlag = clickCountFlag +1;
-            utag.link({ 'tealium_event':'product_view','page_type' :'product_quick_view',
-                'page_name' :'Offer Credit Card',    'product_id' : '1236',
-                   'product_name' :'Instant Cashback Card','product_unit_price':'123' });
-                utag.view({
-                    "tealium_event": "product_view",
-                    "page_type" : "product_quick_view",
-                    "page_name" : "Offer Credit Card",
-                    "product_id" : "InstantCashBack",
-                    "product_name" : "InstantCashBack"
-                });
+            // utag.link({ 'tealium_event':'product_view','page_type' :'product_quick_view',
+            //     'page_name' :'Offer Credit Card',    'product_id' : '1236',
+            //        'product_name' :'Instant Cashback Card','product_unit_price':'123' });
+            //     utag.view({
+            //         "tealium_event": "product_view",
+            //         "page_type" : "product_quick_view",
+            //         "page_name" : "Offer Credit Card",
+            //         "product_id" : "InstantCashBack",
+            //         "product_name" : "InstantCashBack"
+            //     });
                 //Readmore Readless toggle action
                 var dots = document.getElementById("dots3");
                 var moreText = document.getElementById("more3");
